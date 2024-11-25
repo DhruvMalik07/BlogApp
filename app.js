@@ -19,7 +19,7 @@ var blogRoutes=require("./routes/blogs"),
 // APP Config
 //seedDB();
 //mongoose.connect('mongodb://localhost:27017/blog_app', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect('mongodb+srv://arvindyadav:arvind2002@blog-app.yvbmp.mongodb.net/blog_app?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://dhruvmalik:dhruv2002@blog-app.yvbmp.mongodb.net/blog_app?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 app.set("view engine", "ejs");
@@ -31,7 +31,7 @@ app.use(flash());
 
 // Passport Configuration
 app.use(require("express-session")({
-  secret:"my name is arvind",
+  secret:"my name is dhruv",
   resave:false,
   saveUninitialized: false
 }));
